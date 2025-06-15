@@ -11,4 +11,8 @@ def send_welcome(message):
 def send_sortirovka(message):
     bot.reply_to(message, "Мусорный бак зелёного цвета - для стекла. А в красный бак нужно класть металл. В синий контейнер - бумагу, а в жёлтый - пластик")
 
+@bot.message_handler(commands=['novosti'])
+def send_sortirovka(message):
+    bot.reply_to(message, "Вот ссылка на самые новые новость в мире экологии: https://ecosphere.press/news/?ysclid=mbxe4llnq9420301768")
+
 bot.polling()
